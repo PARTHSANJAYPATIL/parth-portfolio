@@ -8,8 +8,7 @@
     --background: rgb(0, 0, 33);
     ;
     --font-color: rgb(255, 255, 255);
-    --color3: rgb(80, 87, 122);
-    --color4: rgb(94, 77, 188);
+
 
     padding: 0;
     margin: 0;
@@ -41,6 +40,7 @@ main {
 /* ================================================
 ===================== HEADER ======================
 =================================================== */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -48,6 +48,7 @@ nav {
     height: 80px;
     background-color: rgb(14, 14, 61);
     padding: 0 6%;
+    width: inherit;
 }
 
 .right ul {
@@ -82,6 +83,10 @@ nav {
 footer {
     margin-top: 10px;
     background-color: rgba(2, 2, 82, 0.205);
+}
+
+footer p {
+    text-align: center;
 }
 
 .foot-panel1 a {
@@ -186,58 +191,62 @@ footer {
 .road {
     margin-top: 20%;
     background-color: rgb(117, 112, 112);
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
     transform: rotateX(50deg);
     margin-bottom: 14%;
 }
-.remove-padding{
+
+.remove-padding {
     padding: 0;
 }
+
 .road-lines {
     display: flex;
     justify-content: space-evenly;
     border-top: 10px dashed white;
     position: relative;
-    top: 90px;
+    top: 5.625rem;
 }
 
 .edu {
     position: relative;
-    bottom:320px;
+    bottom: 20rem;
     max-width: 25rem;
-    background-color: rgb(56, 56 ,64);
+    background-color: rgb(56, 56, 64);
     min-height: fit-content;
-    padding: 10px;
-    box-shadow: 0 30px 10px rgba(0, 0, 0, 0.18);
+    padding: .625rem;
+    box-shadow: 0 1.875rem .625rem rgba(0, 0, 0, 0.18);
 }
 
 .edu h4 {
     font-size: 1.78rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .edu p {
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
     font-size: 1.25rem;
 }
-.current{
+
+.current {
     background-color: rgb(151, 92, 13);
 }
-.years{
+
+.years {
     display: flex;
     font-size: 2rem;
     font-weight: bold;
     position: relative;
-    bottom: 200px;
-    padding: 20px 50px;
+    bottom: 12.5rem;
+    padding: 1.25rem 3.125rem;
     color: rgb(199, 195, 195);
 }
 
-.spacer{
+.spacer {
     text-align: center;
-   width: 25rem;
-   color: rgb(56 56 64);
+    width: 25rem;
+    color: rgb(56 56 64);
 }
 
 /* ***************************************************
@@ -254,7 +263,7 @@ footer {
 
 /* ****** Contact Form ****** */
 form {
-    background-color: var(--color2);
+    background-color: rgb(48, 49, 49);
     padding: 10px 30px 10px 30px;
     width: 570px;
     border-radius: 5%;
@@ -303,16 +312,9 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: var(--color3);
+    background-color: gray;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     width: 500px;
     font-size: 20px;
-}
-
-/* ======================================================
-===================== FOOTER ============================
-========================================================= */
-footer p {
-    text-align: center;
 }
