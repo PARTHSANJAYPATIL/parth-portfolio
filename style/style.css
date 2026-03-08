@@ -32,6 +32,14 @@ main {
     padding: 0 9%;
 }
 
+hr {
+    border: 10px solid #09022a;
+    box-shadow: 0px 0px 20px #0902;
+}
+
+.padding{
+    padding: 20% 0;
+}
 /* ================================================
 ===================== UTILITY CLASS ======================
 =================================================== */
@@ -42,7 +50,11 @@ main {
 /* ================================================
 ===================== HEADER ======================
 =================================================== */
-
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -108,14 +120,14 @@ footer p {
 /* ***************************************************
 ******************* HERO *******************
 ****************************************************** */
-.first-section {
+#home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10% 0 24% 0;
+    padding: 20% 0;
 }
 
-.first-section>div {
+#home>div {
     width: 40%;
 }
 
@@ -141,24 +153,101 @@ footer p {
     color: rgb(71, 172, 240);
 }
 
-/* ***************************************************
-******************* ABOUT & SKILLS *******************
-****************************************************** */
-.second-section {
+.social-media a {
+    color: white;
+}
+
+#buttons{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 60%;
+}
+.btn {
+    background-color: rgb(13, 13, 205);
+    color: var(--font-color);
+    padding: 10px 30px;
+    border-radius: 4rem;
+    font-size: .9rem;
+    margin: 0 10px;
+    /* border: 2px solid transparent;
+    border-top-color: white;
+    border-left-color: white; */
+      border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: none;
+    border-right: none;
+}
+
+.btn-border-style {
+    /* border: 2px solid transparent;
+    border-top-color: transparent;
+    border-left-color: transparent; */
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* ***************************************************
+******************* ABOUT  *******************
+****************************************************** */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0;
+}
+#about > h2{
+    margin-bottom: 30px;
+}
+#about>p {
+    width: 50%;
+}
+
+/* ***************************************************
+******************* SKILLS  *******************
+****************************************************** */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0;
+}
+
+#skills > h2{
+    margin-bottom: 30px;
+}
+.skill-set {
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.second-section > div{
-    width: 45%;
-    text-align: center;
+.skill {
+    border: 2px solid rgb(255, 255, 255);
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.8);
 }
+
+.skill-icon {
+    width: 80px;
+    height: auto;
+}
+
 /* ***************************************************
 ******************* projects.html *******************
 ****************************************************** */
+#education{
+    padding: 12% 0 0 0;
+}
 .word-style {
     text-align: center;
     margin: 20px 0;
@@ -212,7 +301,7 @@ footer p {
 }
 
 /* ***************************************************
-******************* education.html *******************
+******************* EDUCATION *******************
 ****************************************************** */
 .road {
     margin-top: 20%;
@@ -221,10 +310,6 @@ footer p {
     width: 100%;
     transform: rotateX(50deg);
     margin-bottom: 14%;
-}
-
-.remove-padding {
-    padding: 0;
 }
 
 .road-lines {
@@ -348,16 +433,17 @@ button[type="submit"] {
 /* ************** MEDIA QUERIES ****************** */
 /* Target screens with a maximum width of 576px */
 @media (max-width: 798px) {
+
     /* CSS styles for small screens */
-    .right{
+    .right {
         display: none;
     }
 
-    .first-section {
+    #home {
         flex-direction: column;
     }
 
-    .first-section>div {
+    #home>div {
         width: 80%;
     }
 
@@ -366,6 +452,8 @@ button[type="submit"] {
         margin-top: 2rem;
         border: 1px solid rgb(255, 255, 255);
     }
+
+
 }
 
 /* Target screens with a minimum width of 576px */

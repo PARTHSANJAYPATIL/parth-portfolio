@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home || Portofolio</title>
+    <title>Parth's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -26,40 +27,111 @@
     </header>
 
     <main>
-        <section class="first-section" id="home">
+        <!-- Home Section -->
+        <section id="home">
             <div class="left-section">
                 <div>Hi, I'm <span class="purpule">Parth</span></div>
                 <div>and I'm a passinate</div>
                 <div class="passion">web developer</div>
+                <div class="social-media">
+                    <a href="https://github.com/PARTHSANJAYPATIL" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/patil-parth-sanjay" target="_blank"><i
+                            class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+                <div id="buttons">
+                    <button type="button" class="btn">Resume</button>
+                    <button type="button" class="btn">Contact Me</button>
+                </div>
+
             </div>
             <div class="right-section">
                 <img src="images/me.jpg" alt="">
             </div>
         </section>
         <hr>
-        <section class="second-section">
-            <div class="about" id="about">
-                <h2>About Me</h2>
-                <span>Hi, I’m Parth Patil, a Computer Science student and passionate web developer. I specialize in
-                    HTML, CSS, and JavaScript, and I am currently learning Python, Django, and full-stack development. I
-                    enjoy building real-world projects and continuously improving my skills.</span>
-            </div>
-            <div class="skill-set" id="skills">
-                <h2>Skills</h2>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m Parth Patil, a Computer Science and Engineering student at Nanasaheb Mahadik College of
+                Engineering, Peth and passionate web developer. I specialize in HTML, CSS, and JavaScript, and I am
+                currently learning Python, Django, and full-stack development.I enjoy building real-world projects and
+                continuously improving my skills.
+            </p>
+        </section>
+        <hr>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skill-set">
                 <div class="skill">
                     <img src="images/html.png" alt="HTML" class="skill-icon">
                     <div class="skill-name">HTML</div>
                 </div>
+
+                <div class="skill">
+                    <img src="images/css.png" alt="CSS" class="skill-icon">
+                    <div class="skill-name">CSS</div>
+                </div>
+
+                <div class="skill">
+                    <img src="images/js.png" alt="JavaScript" class="skill-icon">
+                    <div class="skill-name">JavaScript</div>
+                </div>
+
+                <div class="skill">
+                    <img src="images/git.png" alt="Git" class="skill-icon">
+                    <div class="skill-name">Git</div>
+                </div>
             </div>
-
         </section>
-
-
-        <section class="fourth-section" id="projects">projects</section>
-
-        <section class="fifth-section" id="education">education</section>
-
-        <section class="sixth-section" id="contact">contact</section>
+        <hr>
+        <!-- Projects Section -->
+        <section id="projects">projects</section>
+        <hr>
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="word-style">Education</h2>
+            <section class="road">
+                <div class="road-lines">
+                    <div class="edu">
+                        <div>
+                            <h4>Yashwant Highschool,</h4>
+                            <p>Ishwarpur, Dist. Sangli</p>
+                            <p>Secondary Scholl Certificate - SSC</p>
+                        </div>
+                    </div>
+                    <div class="edu">
+                        <div>
+                            <h4>Abhaysinhraje Bhonsale Institute of Technology (Polytechnic),</h4>
+                            <p>Shahunagar, Shendre, Dist. Satara</p>
+                            <p>Diploma of Education, Computer Engineering</p>
+                        </div>
+                    </div>
+                    <div class="edu current">
+                        <div>
+                            <h4>Nanasaheb Mahadik College of Engineering,</h4>
+                            <p>Peth, Dist. Sangli</p>
+                            <p>Bachelor of Technology - BTech, Computer Science and Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="years">
+                    <p>2021</p>
+                    <div class="spacer"></div>
+                    <p>2022</p>
+                    <div class="spacer"></div>
+                    <p>2025</p>
+                    <div class="spacer">2026</div>
+                    <p>2028</p>
+                </div>
+            </section>
+        </section>
+        <hr>
+        <!-- Contact Section -->
+        <section id="contact">contact</section>
     </main>
 
     <footer>
@@ -70,7 +142,8 @@
             <p class="copy-right">&copy; 2026 Parth Patil. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/90f60b09c0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
